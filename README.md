@@ -10,8 +10,6 @@ Registration System: User registration for a personalized experience.
 
 Product Categories: Includes sections for food, toys, health products, and accessories.
 
-Responsive Design: Optimized for various devices, including desktops, tablets, and smartphones.
-
 Interactive Elements: Engaging animations and interactive UI components.
 
 
