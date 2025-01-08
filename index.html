@@ -1,0 +1,444 @@
+ <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== BOXICONS ===============-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+        
+        <script src = "assets/js/main.js"></script>
+
+        <title>PetHub</title>
+    </head>
+    <body>
+        
+        
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">
+                <img src="assets/img/logo.png" alt="PetHub Logo" class="nav__logo-icon" />
+                </a>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">Home</a>
+                        </li>
+                        <li class="nav__item">
+                        <a href="#products" class="nav__link">Products</a>
+                        </li>
+                    </ul>
+
+                    <div class="nav__close" id="nav-close">
+                        <i class='bx bx-x' ></i>
+                    </div>
+                </div>
+
+                <div class="nav__btns">
+                    <a href="Registration.html">
+                        <i class='bx bx-log-in' id="logout-icon"></i> 
+                    </a>
+
+                    <div class="nav__shop" id="cart-shop">
+                    <a href="#">
+                        <i class='bx bx-shopping-bag'></i>
+                    </a>
+                        <span id="cart-quantity">0</span>
+                    </div>
+                    
+                    <i id="login-icon" class="fas fa-user-circle"></i>
+
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class='bx bx-grid-alt' ></i>
+                    </div>
+
+                </div>
+            </nav>
+        </header>
+
+        
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home" id="home">
+                <div class="home__container container grid">
+                    <div class="home__img-bg">
+                        <img src="assets/img/home.png" alt="" class="home__img">
+                    </div>
+    
+                    <div class="home__social">
+                        <a href="https://www.facebook.com/" target="_blank" class="home__social-link">
+                            Facebook
+                        </a>
+                        <a href="https://twitter.com/" target="_blank" class="home__social-link">
+                            Twitter
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank" class="home__social-link">
+                            Instagram
+                        </a>
+                    </div>
+    
+                    <div class="home__data">
+                        <h1 class="home__title">Welcome <br> To PetHub Shop</h1>
+                        <p class="home__description">
+                            your one-stop destination for all your pet’s needs,
+                            where we offer the best products, expert advice,
+                            and loving care for your furry friends!
+                        </p>
+                      
+
+                        <div class="home__btns">
+                            <a href="#" class="button button--gray button--small">
+                                CART 
+                            </a>
+                            <button class="button home__button" onclick="location.href='#products';">Go To Products</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            
+
+            <!--==================== STORY ====================-->
+            <section class="story section container">
+              <div class="story__container grid" id="story">
+                <div class="story__data">
+                  <h2 class="section__title story__section-title">
+                    Our Story
+                  </h2>
+
+                  <h1 class="story__title">
+                    The Heart of PetHub
+                  </h1>
+
+                  <p class="story__description">
+                    At PetHub, we’re dedicated to enhancing the lives of pets and their families. 
+                    From premium foods to stylish accessories, we offer a curated selection of 
+                    high-quality products and expert advice. Our passion is ensuring every pet gets 
+                    the care they deserve.
+                  </p>
+
+                  <a href="#" class="button button--small">Discover</a>
+                </div>
+
+                <div class="story__images">
+                  <img src="assets/img/story.png" alt="" class="story__img">
+                </div>
+              </div>
+            </section>
+            
+            
+            <!--==================== PRODUCTS ====================-->
+
+<section class="store-categories section" id="products">
+    <h2 class="section__title">Categories</h2>
+
+    <!-- Filter Menu -->
+    <div class="store__filters">
+        <span class="store__item active-store" data-filter='all'>All</span>
+        <span class="store__item" data-filter='.food'>Food</span>
+        <span class="store__item" data-filter='.toys'>Toys</span>
+        <span class="store__item" data-filter='.health'>Health</span>
+        <span class="store__item" data-filter='.accessories'>Accessories</span>
+    </div>
+
+    <hr>
+
+    <!-- Products Section -->
+    <div class="products">
+        <div class="products-grid">
+            <!-- Product 1 -->
+            <div class = "product-js" data-id="1" data-name="Cat Food" data-price="9.00" data-img = "assets/img/food/food2.jpg">
+            <div class="product food">
+                <img src="assets/img/food/food2.jpg" width="130" alt="Cat Food">
+                <h4>Cat Food</h4>
+                <h5>$9.00</h5>
+                <br>
+                <div class="bbtn">
+                    <a href="#">Add to cart</a>
+                </div>
+            </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class = "product-js" data-id="2" data-name="Hamster Food" data-price="8.00" data-img = "assets/img/food/food4.jpg">
+            <div class="product food">
+                <img src="assets/img/food/food4.jpg" width="130" alt="Hamster Food">
+                <h4>Hamster Food</h4>
+                <h5>$8.00</h5>
+                <br>
+                <div class="bbtn">
+                    <a href="#">Add to cart</a>
+                </div>
+            </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class = "product-js" data-id="3" data-name="Pet Toy" data-price="3.50" data-img = "assets/img/toy/pngegg.png">
+            <div class="product toys">
+                <img src="assets/img/toy/pngegg.png" width="130" alt="Pet Toy">
+                <h4>Pet Toy</h4>
+                <h5>$3.50</h5>
+                <br>
+                <div class="bbtn">
+                    <a href="#">Add to cart</a>
+                </div>
+            </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class = "product-js" data-id="4" data-name="Respiratory Pet" data-price="15.75" data-img = "assets/img/health/health2.jpg">
+            <div class="product health">
+                <img src="assets/img/health/health2.jpg" width="130" alt="Respiratory Pet">
+                <h4>Respiratory Pet</h4>
+                <h5>$15.75</h5>
+                <br>
+                <div class="bbtn">
+                    <a href="#">Add to cart</a>
+                </div>
+            </div>
+            </div>
+
+            <!-- Product 5 -->
+            <div class = "product-js" data-id="5" data-name="Dog Bowl" data-price="9.00" data-img = "assets/img/access/pngwing.com.png">
+            <div class="product accessories">
+                <img src="assets/img/access/pngwing.com.png" width="130" alt="Dog Bowl">
+                <h4>Dog Bowl</h4>
+                <h5>$9.00</h5>
+                <br>
+                <div class="bbtn">
+                    <a href="#">Add to cart</a>
+                </div>
+            </div>
+            </div>
+            
+            <!-- Product 6 -->
+            <div class = "product-js" data-id="6" data-name="Cat Collar" data-price="9.00" data-img = "assets/img/access/acc4.jpg">
+            <div class="product accessories">
+                <img src="assets/img/access/acc4.jpg" width="130" alt="Cat Collar">
+                <h4>Cat Collar</h4>
+                <h5>$9.00</h5>
+                <br>
+                <div class="bbtn">
+                    <a href="#">Add to cart</a>
+                </div>
+            </div>
+            </div>
+            <!-- Product 7 -->
+            <div class = "product-js" data-id="7" data-name="Interactive Toy" data-price="5.00" data-img = "assets/img/toy/toy2.jpg">
+            <div class="product toys">
+                <img src="assets/img/toy/toy2.jpg" width="130" alt="Interactive Pet Toy">
+                <h4>Interactive Toy</h4>
+                <h5>$5.00</h5>
+                <br>
+                <div class="bbtn">
+                    <a href="#">Add to cart</a>
+                </div>
+            </div>
+            </div>
+
+            <!-- Product 8 -->
+            <div class = "product-js" data-id="8" data-name="Pet Vitamins" data-price="12.00" data-img = "assets/img/health/health5.jpg">
+            <div class="product health">
+                <img src="assets/img/health/health5.jpg" width="130" alt="Pet Vitamins">
+                <h4>Pet Vitamins</h4>
+                <h5>$12.00</h5>
+                <br>
+                <div class="bbtn">
+                    <a href="#">Add to cart</a>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+            <!--==================== TESTIMONIAL ====================-->
+<section class="testimonial section container">
+    <div class="testimonial__container grid">
+        <div class="swiper testimonial-swiper">
+            <div class="swiper-wrapper">
+                <!-- Testimonial -->
+                <div class="testimonial__card swiper-slide">
+                    <div class="testimonial__quote">
+                        <i class='bx bxs-quote-alt-left'></i>
+                    </div>
+                    <p class="testimonial__description">
+                        PetHub has been a game-changer for my pets! The variety of products is fantastic, and the 
+                        quality is unbeatable. The customer service team was incredibly helpful and knowledgeable, 
+                        helping me choose the best products for my pets’ needs.
+                    </p>
+                    <h3 class="testimonial__date">Sept 12, 2024</h3>
+                    
+                    <div class="testimonial__perfil">
+                        <img src="assets/img/testimonial1.jpg" alt="Customer Photo" class="testimonial__perfil-img">
+                        <div class="testimonial__perfil-data">
+                            <span class="testimonial__perfil-name">Rayanah Barnawi</span>
+                            <span class="testimonial__perfil-detail">Pet Owner</span>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="testimonial__images">
+            <div class="testimonial__square"></div>
+            <img src="assets/img/testimonial.png" alt="PetHub Logo" class="testimonial__img">
+        </div>
+    </div>
+</section>
+            
+
+<!--==================== NEWSLETTER ====================-->
+<section class="newsletter section container">
+    <div class="newsletter__bg grid">
+        <!-- Offers Section -->
+        <div class="newsletter__offers">
+            <!-- First Image -->
+            <div class="newsletter__img">
+                <img src="assets/img/pnghq.com-png-bird-logo.png" alt="Bird Logo" class="newsletter__img-logo">
+            </div>
+            
+            <!-- Offers Text -->
+            <div class="newsletter__text">
+                <h3 class="newsletter__offer-title">Special Offer</h3>
+                <h1 class="newsletter__offer-heading">Buy 2 Toys, Get 1 FREE!</h1>
+                <p class="newsletter__offer-description">Keep your pet entertained with our new collection.</p>
+            </div>
+            
+            <!-- Second Image -->
+            <div class="newsletter__img">
+                <img src="assets/img/black-cat-png-cute-cat-free-hd-download-transparent-png-4545-915x1024.png" alt="Cute Cat" class="newsletter__img-cat">
+            </div>
+        </div>
+    </div>
+</section>
+              </main>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer section">
+            <div class="footer__container container grid">
+                <div class="footer__content">
+                    <h3 class="footer__title">Our information</h3>
+
+                    <ul class="footer__list" id="list">
+                        <li>King Saudi Arabia</li>
+                        <li>Al-Hofuf 36421</li>
+                        <li>+966 13 456 7890</li>
+                    </ul>
+                </div>
+                <div class="footer__content">
+                    <h3 class="footer__title">About Us</h3>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#list" class="footer__link">Support Center</a>
+                        </li>
+                        <li>
+                            <a href="#list" class="footer__link">Customer Support</a>
+                        </li>
+                        <li>
+                            <a href="#story" class="footer__link">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#copy" class="footer__link">Copy Right</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+            <h3 class="footer__title">Product</h3>
+            <ul class="footer__links">
+                <li><a href="#products" class="footer__link">Food</a></li>
+                <li><a href="#products" class="footer__link">Toys</a></li>
+                <li><a href="#products" class="footer__link">Health</a></li>
+                <li><a href="#products" class="footer__link">Accessories</a></li>
+            </ul>
+        </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Social</h3>
+
+                    <ul class="footer__social">
+                    <li>
+                        <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
+                            <i class='bx bxl-facebook'></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/" target="_blank" class="footer__social-link">
+                            <i class='bx bxl-twitter'></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
+                            <i class='bx bxl-instagram'></i>
+                        </a>
+                    </li>
+                </ul>
+
+                </div>
+            </div>
+
+            <span class="footer__copy" id="copy">&#169; 2024 PetHub. All rigths reserved</span>
+        </footer>
+
+        <!--=============== SCROLL UP ===============-->
+        <a href="#" class="scrollup" id="scroll-up"> 
+            <i class='bx bx-up-arrow-alt scrollup__icon' ></i>
+        </a>
+        
+<!-- Cart Sidebar -->
+<div class="cart">
+  <h2>Shopping Bag</h2>
+  <div id="cart-items"></div>
+  <div class="total">Total: $<span id="total-price">0.00</span></div>
+
+  <div class="cart-btn">
+    <button class="close-cart">CLOSE</button>
+    <button id="cart-checkout">CHECKOUT</button>
+  </div>
+</div>
+
+        
+        <script>
+
+document.querySelectorAll('.store__item').forEach(item => {
+    item.addEventListener('click', function () {
+        const filter = this.dataset.filter; 
+
+        
+        const allProducts = document.querySelectorAll('.product-js');
+
+        
+        allProducts.forEach(product => {
+            
+            if (filter === 'all' || product.querySelector('.product').classList.contains(filter.substring(1))) {
+                product.style.display = 'block'; 
+            } else {
+                product.style.display = 'none'; 
+            }
+        });
+
+       
+        document.querySelectorAll('.store__item').forEach(btn => btn.classList.remove('active-store'));
+        this.classList.add('active-store');
+    });
+});
+
+            
+            document.getElementById('cart-checkout').addEventListener('click', function() {
+                window.location.href = 'Checkout.html' ; 
+            });
+            
+ 
+
+        </script>
+
+    </body>
+</html>
